@@ -1,6 +1,7 @@
-alert('Bem-vindo ao jogo do número secreto!')
+alert('Bem-vindo ao jogo do número secreto!');
 let numeroSecreto = Math.floor(Math.random() * 10);
 console.log('O número secreto é: ' + numeroSecreto);
+let chute;
 
 while (chute != numeroSecreto) {
     chute = prompt('Digite um número entre 1 e 10:');
