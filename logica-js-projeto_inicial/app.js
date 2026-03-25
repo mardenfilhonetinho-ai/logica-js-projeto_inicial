@@ -1,13 +1,13 @@
-
 alert('Bem-vindo ao jogo do número secreto!');
-let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+let numeroMaximo = 10000;
+let numeroSecreto = Math.floor(Math.random() * numeroMaximo) + 1;
 console.log('O número secreto é: ' + numeroSecreto);
 let chute;
 let tentativas = 1;
 
 // Pense num troço chato que foi fazer isso...(mesmo sendo o basico do basico kk).
 while (chute != numeroSecreto) {
-    chute = prompt('Digite um número entre 1 e 10:');
+    chute = prompt(`Digite um número entre 1 e ${numeroMaximo}:`);
         if (chute == numeroSecreto) {
             let tentativasTexto = tentativas == 1 ? 'tentativa' : 'tentativas';
             alert(`Parabéns! Você acertou o número secreto (${numeroSecreto}) com ${tentativas} ${tentativasTexto}!`);
