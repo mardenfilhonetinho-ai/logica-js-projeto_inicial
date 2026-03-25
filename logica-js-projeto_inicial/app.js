@@ -9,9 +9,9 @@ let tentativas = 1;
 while (chute != numeroSecreto) {
     chute = prompt('Digite um número entre 1 e 10:');
         if (chute == numeroSecreto) {
-        break; // Fiz um operador tenário pra não ficar repetitivo
-        // .
-    } else { 
+            let tentativasTexto = tentativas == 1 ? 'tentativa' : 'tentativas';
+            alert(`Parabéns! Você acertou o número secreto (${numeroSecreto}) com ${tentativas} ${tentativasTexto}!`);
+    }
     if (chute > numeroSecreto) { // É "``" e não "''" por que se não da erro.
         alert(`O número secreto é menor que ${chute}`);
     } else {
@@ -20,12 +20,12 @@ while (chute != numeroSecreto) {
     // tentativas = tentativas + 1; <-- outra forma de incrementar a variável
     tentativas++;
     }
-}
 
 
-let tentativasTexto = tentativas == 1 ? 'tentativa' : 'tentativas'; // Isso é um operador ternário, é tipo um "if" mais simples.
+
+// let tentativasTexto = tentativas == 1 ? 'tentativa' : 'tentativas'; // Moved inside the if block
 
 
 // Esses comentarios são só pra eu lembrar das coisas mesmo hihihi.
 // ou caso alguem veja esse codigo sei la.
-// Até o momento, projeto finalizado, se essa mensagem não estiver aqui, eu retomei o projeto
+
