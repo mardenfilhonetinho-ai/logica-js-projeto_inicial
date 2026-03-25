@@ -1,12 +1,11 @@
 
 alert('Bem-vindo ao jogo do número secreto!');
-//let numeroSecreto = Math.floor(Math.random() * 10) + 1;  (Tive que tirar pra fazer outras coisas aqui).
-numeroSecreto = 5; // Só pra testar mesmo, depois eu volto a usar o random.
+let numeroSecreto = Math.floor(Math.random() * 10) + 1;
 console.log('O número secreto é: ' + numeroSecreto);
 let chute;
 let tentativas = 1;
 
-// Pense num troço chato que foi fazer isso...
+// Pense num troço chato que foi fazer isso...(mesmo sendo o basico do basico kk).
 while (chute != numeroSecreto) {
     chute = prompt('Digite um número entre 1 e 10:');
         if (chute == numeroSecreto) {
@@ -28,4 +27,5 @@ let tentativasTexto = tentativas == 1 ? 'tentativa' : 'tentativas'; // Isso é u
 
 
 // Esses comentarios são só pra eu lembrar das coisas mesmo hihihi.
+// ou caso alguem veja esse codigo sei la.
 
