@@ -28,4 +28,4 @@ let tentativasTexto = tentativas == 1 ? 'tentativa' : 'tentativas'; // Isso é u
 
 // Esses comentarios são só pra eu lembrar das coisas mesmo hihihi.
 // ou caso alguem veja esse codigo sei la.
-
+// Até o momento, projeto finalizado, se essa mensagem não estiver aqui, eu retomei o projeto
