@@ -1,5 +1,5 @@
 alert('Bem-vindo ao jogo do número secreto!');
-let numeroMaximo = 10000;
+let numeroMaximo = 100;
 let numeroSecreto = Math.floor(Math.random() * numeroMaximo) + 1;
 console.log('O número secreto é: ' + numeroSecreto);
 let chute;
@@ -11,6 +11,7 @@ while (chute != numeroSecreto) {
         if (chute == numeroSecreto) {
             let tentativasTexto = tentativas == 1 ? 'tentativa' : 'tentativas';
             alert(`Parabéns! Você acertou o número secreto (${numeroSecreto}) com ${tentativas} ${tentativasTexto}!`);
+            break; // Encerra o loop quando o número secreto é acertado
     }
     if (chute > numeroSecreto) { // É "``" e não "''" por que se não da erro.
         alert(`O número secreto é menor que ${chute}`);
